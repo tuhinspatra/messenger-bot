@@ -1,0 +1,16 @@
+{
+  "name": "firstgitproject",
+  "version": "1.0.0",
+  "description": "a chat bot for messenger that plays quiz",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "armag",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "request": "^2.81.0"
+  }
+}
