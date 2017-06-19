@@ -6,13 +6,13 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const request = require('request');
 const path = require('path');
-var messengerButton = "<html><head><title>Facebook Messenger Bot </title></head><body><h1>Facebook Messenger Bot by <i><a href=\"https://twitter.com/mynameistsp\">armag</a></i></h1>This is a bot based on Messenger Platform. For more details, see their <a href=\"https://developers.facebook.com/docs/messenger-platform/guides/quick-start\">docs</a>.<br>The complete source code can be found on my <a href=\"https://github.com/tuhinpatra/messenger-bot\">GitHub repo</a>.<script src=\"https://button.glitch.me/button.js\" data-style=\"glitch\"></script><div class=\"glitchButton\" style=\"position:fixed;top:20px;right:20px;\"></div></body></html>";
+var messengerButton = "<html><head><title>Facebook Messenger Bot </title></head><body><h1>Facebook Messenger Bot by <i><a href=\"https://twitter.com/mynameistsp\">armag</a></i></h1>This is a bot based on Messenger Platform. For more details, see their <a href=\"https://developers.facebook.com/docs/messenger-platform/guides/quick-start\">docs</a>.<br>The complete source code can be found on my <a href=\"https://github.com/armag-pro/messenger-bot\">GitHub repo</a>.<script src=\"https://button.glitch.me/button.js\" data-style=\"glitch\"></script><div class=\"glitchButton\" style=\"position:fixed;top:20px;right:20px;\"></div></body></html>";
 var quizQs = ['My fav place is:','I was born in','I am:','I prefer','I have mounted a:','I have read:'];
-var options = [ ['Las Vegas','Paris'],['West Bengal','Rajasthan'],['6.1- ft','6.1+ ft'],['Driving','Riding'],
+var options = [ ['Las Vegas','Paris'],['West Bengal','Rajasthan'],['6.1+ ft','6.1- ft'],['Driving','Riding'],
 			['Helicopter','Elephant'],['One Indian Girl','One night @ call centre']];
 var Y = 'PAYLOAD_CORRECT_ANS';
 var N = 'PAYLOAD_WRONG_ANS';
-var correctAns = [[Y,N],[N,Y],[Y,N],[Y,N],[Y,N],[N,Y]];
+var correctAns = [[Y,N],[Y,N],[N,Y],[Y,N],[Y,N],[N,Y]];
 // The rest of the code implements the routes for our Express server.
 let app = express();
 
@@ -129,7 +129,7 @@ function receivedMessage(event) {
 	        sendTextMessage(senderID, ":'(");
 
 	    } else if(messageText.match(/^(.*((^|\W)bye(\W|\b)|(^|\W)bbye(\W|\b)|(^|\W)bubbye(\W|\b)|(^|\W)quit(\W|\b)|(^|\W)exit(\W|\b)).*)$/i)) {
-	        sendTextMessage(senderID, "So soon...I was liking it so much. You are so much fun to be around");
+	        sendTextMessage(senderID, "So soon...I was liking it so much.");
 	        sendTextMessage(senderID, "You are so much fun to be around");
 	        sendTextMessage(senderID, "do come back later please...");
 	        sendTextMessage(senderID, "heres a quick link btw m.me/torquebull");
