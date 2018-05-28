@@ -1,5 +1,7 @@
 # A FUN (& DUMB!) QUIZ BOT FOR MESSENGER #
-Update: The actual hosted app may not be working in the future, as Facebook requires activating the rights every year to keep it functioning.
+Update: The actual hosted app may not be working in the future, as Facebook requires activating the rights every year to keep it functioning. Here is a gif of my interaction with the bot w/o text reply rights.
+
+![Bot Demo](https://github.com/armag-pro/messenger-bot/blob/master/gif_demo.gif)
 
 > If you are new to messenger bots you might want to see the [Facebook Dev Docs](https://developers.facebook.com/docs/messenger-platform "Messenger Platform Docs") first.
 
